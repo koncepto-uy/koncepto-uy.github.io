@@ -55,14 +55,13 @@ a {
 #header .boton-ancla {
   text-decoration: none;
   color: #F0F0D9;
+  margin: 5px;
   padding: 5px 10px;
-  border-radius: 5px;
   font-size: 14px;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .boton-ancla:hover {
-  background-color: #751F14;
   transform: scale(1.1);
 }
 
@@ -301,7 +300,6 @@ a {
   align-items: center;
   gap: 8px;
   width: fit-content;
-  margin-bottom: 20px;
 }
 #mainRecomendaciones .MiniCardRecomendaciones img {
   width: 50px;
@@ -319,6 +317,7 @@ a {
   gap: 5px;
 }
 #mainRecomendaciones .card {
+  margin-top: 50px;
   display: flex;
   width: 700px;
   background-color: #EBECCD;
@@ -338,11 +337,23 @@ a {
   padding-right: 60px;
   padding-bottom: 20px;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+#mainRecomendaciones .card .card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 #mainRecomendaciones .card .card-media .recomendacionesBotonPlay {
+  position: absolute;
+  top: 75%;
+  left: 4%;
   width: 50px;
   height: 50px;
-  border-radius: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -424,6 +435,7 @@ a {
 #mainRecomendaciones .card .card-content .button-grid .links a span {
   flex: 1;
   padding-left: 50px;
+  margin-bottom: 5px;
 }
 #mainRecomendaciones .card .card-content .date {
   font-size: 12px;
@@ -432,7 +444,7 @@ a {
 
 /* Efecto hover */
 .recomendacionesBotonPlay:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }
 
 .recomendacionesBotonPlay a:hover {

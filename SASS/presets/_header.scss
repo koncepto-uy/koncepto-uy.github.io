@@ -30,17 +30,17 @@
     .boton-ancla {
         text-decoration: none;
         color: #F0F0D9;
+        margin: 5px;
         // background-color: #922D1E;
         padding: 5px 10px;
-        border-radius: 5px;
         font-size: 14px;
-        transition: background-color 0.3s, transform 0.2s;
+        transition: transform 0.2s;
     }
 }
 
 .boton-ancla:hover {
-    background-color: #751F14; 
-    transform: scale(1.1); 
+    transform: scale(1.1);
+    
 }
 
 @media (max-width: 768px){
